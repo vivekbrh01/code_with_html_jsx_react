@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>With React</title>
+	</head>
+	<body>
+		<section class="hero">
+			<div id="root"></div>
+		</section>
+		<script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+		<script type="text/babel">
+			function App() {
+				return (
+					<>
+						<h1>Welcome to React!</h1>
+						<p>
+							This is React. This is React. This is React. This is React. This
+							is React
+						</p>
+					</>
+				);
+			}
+
+			ReactDOM.render(<App />, document.querySelector("#root"));
+		</script>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.hero {
+				background-color: lightblue;
+				text-align: center;
+				padding: 24px 0;
+			}
+		</style>
+	</body>
+</html>

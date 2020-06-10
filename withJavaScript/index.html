@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hello World with JavaScript</title>
+	</head>
+	<body>
+		<section class="hero">
+			<div id="root"></div>
+		</section>
+		<!-- JavaScript -->
+		<script>
+			let rootElement = document.querySelector("#root");
+			let heading = document.createElement("h1");
+			let para = document.createElement("p");
+			heading.innerText = "Welcome to React!";
+			para.innerText =
+				"This is React. This is React. This is React. This is React. This is React";
+			rootElement.append(heading, para);
+		</script>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			.hero {
+				background-color: lightblue;
+				text-align: center;
+				padding: 24px 0;
+			}
+		</style>
+	</body>
+</html>
